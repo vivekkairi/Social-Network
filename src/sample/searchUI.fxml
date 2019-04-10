@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="550.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchUI">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@dark.css">
+         <children>
+            <ImageView fx:id="image" fitHeight="193.0" fitWidth="204.0" layoutX="206.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="username" layoutX="203.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Text" textAlignment="CENTER" wrappingWidth="211.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="dob" layoutX="202.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" textAlignment="CENTER" wrappingWidth="211.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="mobile" layoutX="202.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" textAlignment="CENTER" wrappingWidth="211.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#78cee5" layoutX="518.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interests">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="name" layoutX="202.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #78cee5;" styleClass="text-id" text="Text" textAlignment="CENTER" wrappingWidth="211.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="interests" layoutX="534.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" wrappingWidth="174.2060546875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="request" layoutX="534.0" layoutY="260.0" mnemonicParsing="false" onAction="#addFriend" styleClass="custom" text="Follow">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="504.0" layoutY="302.0" mnemonicParsing="false" onAction="#loadFeed" styleClass="custom" text="Return to Feed">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="800.0" prefWidth="1400.0" stylesheets="@dark.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUp">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="600.0" stylesheets="@dark.css">
+         <children>
+            <Text layoutX="530.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Name" />
+            <Text layoutX="528.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Username" />
+            <Text layoutX="528.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Password" />
+            <Text layoutX="528.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Re-enter Password" />
+            <Text layoutX="529.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Gender" />
+            <Text layoutX="530.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="DOB" />
+            <CheckBox fx:id="terms" layoutX="531.0" layoutY="476.0" mnemonicParsing="false" styleClass="radio-button" text="I agree to the terms and conditions." />
+            <Button layoutX="588.0" layoutY="533.0" mnemonicParsing="false" onAction="#checkDetails" styleClass="custom" text="Sign Up" />
+            <Button layoutX="710.0" layoutY="533.0" mnemonicParsing="false" onAction="#loadLogin" styleClass="custom" text="Back to Login" />
+            <TextField fx:id="txtName" layoutX="678.0" layoutY="252.0" />
+            <TextField fx:id="txtUsername" layoutX="678.0" layoutY="282.0" />
+            <PasswordField fx:id="txtPassword" layoutX="678.0" layoutY="312.0" />
+            <PasswordField fx:id="verifyPassword" layoutX="678.0" layoutY="342.0" />
+            <Text layoutX="527.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-id" text="Mobile No" />
+            <RadioButton fx:id="male" layoutX="678.0" layoutY="412.0" mnemonicParsing="false" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="female" layoutX="743.0" layoutY="412.0" mnemonicParsing="false" text="Female" toggleGroup="$gender">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="others" layoutX="825.0" layoutY="412.0" mnemonicParsing="false" text="Others" toggleGroup="$gender">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </RadioButton>
+            <Text fx:id="error" fill="#ffff8d" layoutX="522.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="342.0185546875" />
+            <ImageView fx:id="logo" fitHeight="120.0" fitWidth="125.0" layoutX="622.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXDatePicker fx:id="txtDob" defaultColor="#b2b2b2" editable="false" layoutX="677.0" layoutY="436.0" prefHeight="29.0" prefWidth="205.0" stylesheets="@date.css" />
+            <TextField fx:id="mobileNo" layoutX="678.0" layoutY="376.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

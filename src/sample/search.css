@@ -1,0 +1,8 @@
+.list-view .list-cell{
+    -fx-background-color: #2A2E37;
+    -fx-selection-bar: black;
+}
+
+.root {
+    -fx-background-color: #2A2E37 ;
+}

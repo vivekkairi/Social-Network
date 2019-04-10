@@ -1,0 +1,76 @@
+* {
+    -fx-primary: #2A2E37;
+    -fx-secondary:#78cee5;
+    -fx-primarytext: #B2B2B2;
+}
+
+.root {
+    -fx-background-color: -fx-primary ;
+}
+
+
+.custom {
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+}
+
+.custom:hover {
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0px;
+    -fx-text-fill: -fx-primary;
+}
+
+
+.text-field {
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: white;
+}
+
+.glyph-icon {
+    -fx-fill: -fx-primarytext;
+}
+
+.text-id {
+    -fx-fill: -fx-primarytext;
+}
+
+.radio-button {
+    -fx-text-fill: -fx-primarytext;
+    -jfx-selected-color: -fx-secondary;
+
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+
+
+.list-view .scroll-bar:vertical .increment-arrow,
+.list-view .scroll-bar:vertical .decrement-arrow,
+.list-view .scroll-bar:vertical .increment-button,
+.list-view .scroll-bar:vertical .decrement-button {
+    -fx-padding:0;
+}
+
+.list-view .scroll-bar:horizontal .increment-arrow,
+.list-view .scroll-bar:horizontal .decrement-arrow,
+.list-view .scroll-bar:horizontal .increment-button,
+.list-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}
+
+.list-view {
+    -fx-selection-bar:black;
+}
